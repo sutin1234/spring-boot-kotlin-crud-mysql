@@ -1,0 +1,42 @@
+### checkIn hotel
+POST http://localhost:8080/hotels/checkin
+Content-Type: application/json
+
+{
+"hotelName": "หอพักดินแดง 3",
+"nbGuest": 2
+}
+
+### checkOut hotel
+POST http://localhost:8080/hotels/checkout
+Content-Type: application/json
+
+{
+  "hotelName": "หอพักดินแดง4",
+  "nbGuest": 2
+}
+
+
+### add hotel
+POST http://localhost:8080/hotels/add
+Content-Type: application/json
+
+{
+  "name": "หอพักดินแดง5",
+  "classification": 2,
+  "nbRoom": 2
+}
+
+### findByName hotels
+GET http://localhost:8080/hotels/findByName/หอพักดินแดง 3
+Accept: application/json
+
+### findById hotels
+GET http://localhost:8080/hotels/findById/6db8d376-4820-4618-aaf3-e8bbecf8b87e
+Accept: application/json
+
+### find all hotels
+GET http://localhost:8080/hotels/all
+Content-Type: application/json
+
+
